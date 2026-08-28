@@ -131,6 +131,11 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/usb/dwc3/dwc3-zhihe.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-usb2.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-c10phy.ko",
+    "drivers/gpu/drm/verisilicon/verisilicon-dc.ko",
+    "drivers/gpu/drm/bridge/th1520-dw-hdmi.ko",
+    "drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko",
+    "drivers/gpu/drm/drm_dma_helper.ko",
+    "drivers/gpu/drm/display/drm_display_helper.ko",
 ]
 
 # ============================================================
@@ -165,6 +170,11 @@ ALIBABA_VENDOR_DLKM_MODULES = [
     "dwc3-zhihe.ko",
     "phy-zhihe-snps-usb2.ko",
     "phy-zhihe-snps-c10phy.ko",
+    "verisilicon-dc.ko",
+    "th1520-dw-hdmi.ko",
+    "dw-hdmi.ko",
+    "drm_dma_helper.ko",
+    "drm_display_helper.ko",
 ]
 
 # ============================================================
