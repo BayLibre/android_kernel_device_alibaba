@@ -100,6 +100,14 @@ CONFIG_RESET_A210=m
 CONFIG_PINCTRL_A210=m
 
 # ============================================================
+# IOPMP
+# ============================================================
+# Must be =y, not =m: a210-pd.c guards its iopmp_enable()
+# iopmp_disable() # calls with a bare `#ifdef CONFIG_ZH_IOPMP`
+CONFIG_IOPMP=y
+CONFIG_ZH_IOPMP=y
+
+# ============================================================
 # Power Domain
 # ============================================================
 CONFIG_A210_POWER_DOMAIN=m
