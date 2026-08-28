@@ -144,3 +144,10 @@ CONFIG_USB_DWC2=m
 # TEMPORARY: VKMS boot-completion test
 # ============================================================
 CONFIG_DRM_VKMS=m
+
+# ============================================================
+# HDMI Video Output
+# ============================================================
+CONFIG_DRM_VERISILICON_DC=m
+CONFIG_DRM_THEAD_TH1520_DW_HDMI=m
+CONFIG_DRM_DISPLAY_CONNECTOR=m
