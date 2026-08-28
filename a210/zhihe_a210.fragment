@@ -145,3 +145,6 @@ CONFIG_PHY_ZHIHE_SNPS_C10PHY=m
 # TEMPORARY: VKMS boot-completion test
 # ============================================================
 CONFIG_DRM_VKMS=m
+
+CONFIG_DRM_VERISILICON_DC=m
+CONFIG_DRM_THEAD_TH1520_DW_HDMI=m
