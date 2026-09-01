@@ -209,6 +209,7 @@ kernel_build(
                   get_kunit_modules_list("riscv64") +
                   ALIBABA_IN_TREE_MODULES_PATH +
                   ALIBABA_SYSTEM_DLKM_EXTRA_MODULES,
+    pahole = "//common:pahole",
     pre_defconfig_fragments = [":zhihe_a210.fragment"],
     visibility = ["//visibility:public"],
 )
