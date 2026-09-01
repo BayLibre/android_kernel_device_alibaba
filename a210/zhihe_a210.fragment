@@ -116,6 +116,8 @@ CONFIG_A210_POWER_DOMAIN=m
 # GPIO
 # ============================================================
 CONFIG_GPIO_DWAPB=m
+CONFIG_GPIO_PCA953X=m
+CONFIG_GPIO_PCA953X_IRQ=y
 
 # ============================================================
 # eMMC/SD host controller
@@ -140,6 +142,12 @@ CONFIG_DW_WATCHDOG=m
 CONFIG_USB_DWC3_ZHIHE=m
 CONFIG_PHY_ZHIHE_SNPS_USB2=m
 CONFIG_PHY_ZHIHE_SNPS_C10PHY=m
+
+# ============================================================
+# I2C
+# ============================================================
+CONFIG_I2C_DESIGNWARE_CORE=m
+CONFIG_I2C_DESIGNWARE_PLATFORM=m
 
 # ============================================================
 # TEMPORARY: VKMS boot-completion test
