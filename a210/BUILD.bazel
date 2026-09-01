@@ -136,6 +136,9 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko",
     "drivers/gpu/drm/drm_dma_helper.ko",
     "drivers/gpu/drm/display/drm_display_helper.ko",
+    "drivers/i2c/busses/i2c-designware-core.ko",
+    "drivers/i2c/busses/i2c-designware-platform.ko",
+    "drivers/gpio/gpio-pca953x.ko",
 ]
 
 # ============================================================
@@ -175,6 +178,9 @@ ALIBABA_VENDOR_DLKM_MODULES = [
     "dw-hdmi.ko",
     "drm_dma_helper.ko",
     "drm_display_helper.ko",
+    "i2c-designware-core.ko",
+    "i2c-designware-platform.ko",
+    "gpio-pca953x.ko",
 ]
 
 # ============================================================
