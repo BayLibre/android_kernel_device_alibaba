@@ -136,6 +136,7 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko",
     "drivers/gpu/drm/drm_dma_helper.ko",
     "drivers/gpu/drm/display/drm_display_helper.ko",
+    "drivers/usb/dwc2/dwc2.ko",
     "drivers/i2c/busses/i2c-designware-core.ko",
     "drivers/i2c/busses/i2c-designware-platform.ko",
     "drivers/gpio/gpio-pca953x.ko",
@@ -170,6 +171,7 @@ ALIBABA_VENDOR_BOOT_MODULES = [
 # Vendor DLKM modules
 # ============================================================
 ALIBABA_VENDOR_DLKM_MODULES = [
+    "dwc2.ko",
     "dwc3-zhihe.ko",
     "phy-zhihe-snps-usb2.ko",
     "phy-zhihe-snps-c10phy.ko",
