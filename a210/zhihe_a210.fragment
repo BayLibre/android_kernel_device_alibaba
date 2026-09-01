@@ -137,7 +137,7 @@ CONFIG_MMC_SDHCI_OF_DWCMSHC=m
 CONFIG_DW_WATCHDOG=m
 
 # ============================================================
-# USB
+# USB 3.1 for adb (peripheral)
 # ============================================================
 CONFIG_USB_DWC3_ZHIHE=m
 CONFIG_PHY_ZHIHE_SNPS_USB2=m
@@ -148,6 +148,11 @@ CONFIG_PHY_ZHIHE_SNPS_C10PHY=m
 # ============================================================
 CONFIG_I2C_DESIGNWARE_CORE=m
 CONFIG_I2C_DESIGNWARE_PLATFORM=m
+
+# ============================================================
+# USB 2.0 for touch (host)
+# ============================================================
+CONFIG_USB_DWC2=m
 
 # ============================================================
 # TEMPORARY: VKMS boot-completion test
