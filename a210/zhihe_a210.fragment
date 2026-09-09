@@ -177,3 +177,8 @@ CONFIG_ZHIHE_MBOX=y
 CONFIG_ZHIHE_AON=y
 CONFIG_ZHIHE_PROC_DEBUG=y
 CONFIG_REGULATOR_ZHIHE_AON=y
+
+# ============================================================
+# GPU - Imagination PowerVR BXM-4-64 Rogue (upstream driver).
+# ============================================================
+CONFIG_DRM_POWERVR=m
