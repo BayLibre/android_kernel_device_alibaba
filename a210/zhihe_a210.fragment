@@ -164,3 +164,16 @@ CONFIG_DRM_VKMS=m
 # ============================================================
 CONFIG_DRM_VERISILICON_DC=m
 CONFIG_DRM_THEAD_TH1520_DW_HDMI=m
+
+# ============================================================
+# AON (Always-On co-processor) firmware/mailbox/regulator stack.
+#
+# Built-in (=y): a210-pd.ko is a ramdisk module and looks up the
+# "dvdd_gpu" regulator during its own probe, which needs this
+# whole stack already registered by then.
+# ============================================================
+CONFIG_FW_LOADER=y
+CONFIG_ZHIHE_MBOX=y
+CONFIG_ZHIHE_AON=y
+CONFIG_ZHIHE_PROC_DEBUG=y
+CONFIG_REGULATOR_ZHIHE_AON=y
