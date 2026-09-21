@@ -144,6 +144,11 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/i2c/busses/i2c-designware-core.ko",
     "drivers/i2c/busses/i2c-designware-platform.ko",
     "drivers/gpio/gpio-pca953x.ko",
+    "drivers/mmc/core/pwrseq_simple.ko",
+    "drivers/net/wireless/realtek/rtw88/rtw88_core.ko",
+    "drivers/net/wireless/realtek/rtw88/rtw88_sdio.ko",
+    "drivers/net/wireless/realtek/rtw88/rtw88_8822c.ko",
+    "drivers/net/wireless/realtek/rtw88/rtw88_8822cs.ko",
 ]
 
 # ============================================================
@@ -154,6 +159,7 @@ ALIBABA_IN_TREE_MODULES_PATH = [
 # ============================================================
 ALIBABA_SYSTEM_DLKM_EXTRA_MODULES = [
     "drivers/gpu/drm/vkms/vkms.ko",
+    "drivers/bluetooth/btrtl.ko",
 ]
 
 # ============================================================
@@ -191,6 +197,11 @@ ALIBABA_VENDOR_DLKM_MODULES = [
     "i2c-designware-core.ko",
     "i2c-designware-platform.ko",
     "gpio-pca953x.ko",
+    "pwrseq_simple.ko",
+    "rtw88_core.ko",
+    "rtw88_sdio.ko",
+    "rtw88_8822c.ko",
+    "rtw88_8822cs.ko",
 ]
 
 # ============================================================
