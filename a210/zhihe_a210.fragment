@@ -131,7 +131,7 @@ CONFIG_DW_WATCHDOG=m
 # ============================================================
 # USB 3.1 for adb (peripheral)
 # ============================================================
-CONFIG_USB_DWC3_ZHIHE=m
+CONFIG_USB_DWC3_OF_SIMPLE=m
 CONFIG_PHY_ZHIHE_SNPS_USB2=m
 CONFIG_PHY_ZHIHE_SNPS_C10PHY=m
 

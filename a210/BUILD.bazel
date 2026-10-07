@@ -128,7 +128,7 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/mmc/host/sdhci-of-dwcmshc.ko",
     "drivers/mmc/host/cqhci.ko",
     "drivers/watchdog/dw_wdt.ko",
-    "drivers/usb/dwc3/dwc3-zhihe.ko",
+    "drivers/usb/dwc3/dwc3-of-simple.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-usb2.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-c10phy.ko",
     "drivers/gpu/drm/verisilicon/verisilicon-dc.ko",
@@ -176,7 +176,7 @@ ALIBABA_VENDOR_BOOT_MODULES = [
 # ============================================================
 ALIBABA_VENDOR_DLKM_MODULES = [
     "dwc2.ko",
-    "dwc3-zhihe.ko",
+    "dwc3-of-simple.ko",
     "phy-zhihe-snps-usb2.ko",
     "phy-zhihe-snps-c10phy.ko",
     "verisilicon-dc.ko",
