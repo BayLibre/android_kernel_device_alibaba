@@ -108,6 +108,8 @@ CONFIG_A210_POWER_DOMAIN=m
 # GPIO
 # ============================================================
 CONFIG_GPIO_DWAPB=m
+CONFIG_GPIO_PCA953X=m
+CONFIG_GPIO_PCA953X_IRQ=y
 
 # ============================================================
 # eMMC/SD host controller
@@ -127,13 +129,48 @@ CONFIG_MMC_SDHCI_OF_DWCMSHC=m
 CONFIG_DW_WATCHDOG=m
 
 # ============================================================
-# USB
+# USB 3.1 for adb (peripheral)
 # ============================================================
-CONFIG_USB_DWC3_ZHIHE=m
+CONFIG_USB_DWC3_OF_SIMPLE=m
 CONFIG_PHY_ZHIHE_SNPS_USB2=m
 CONFIG_PHY_ZHIHE_SNPS_C10PHY=m
+
+# ============================================================
+# I2C
+# ============================================================
+CONFIG_I2C_DESIGNWARE_CORE=m
+CONFIG_I2C_DESIGNWARE_PLATFORM=m
+
+# ============================================================
+# USB 2.0 for touch (host)
+# ============================================================
+CONFIG_USB_DWC2=m
 
 # ============================================================
 # TEMPORARY: VKMS boot-completion test
 # ============================================================
 CONFIG_DRM_VKMS=m
+
+# ============================================================
+# HDMI Video Output
+# ============================================================
+CONFIG_DRM_VERISILICON_DC=m
+CONFIG_DRM_THEAD_TH1520_DW_HDMI=m
+
+# ============================================================
+# AON (Always-On co-processor) firmware/mailbox/regulator stack.
+#
+# Built-in (=y): a210-pd.ko is a ramdisk module and looks up the
+# "dvdd_gpu" regulator during its own probe, which needs this
+# whole stack already registered by then.
+# ============================================================
+CONFIG_FW_LOADER=y
+CONFIG_ZHIHE_MBOX=y
+CONFIG_ZHIHE_AON=y
+CONFIG_ZHIHE_PROC_DEBUG=y
+CONFIG_REGULATOR_ZHIHE_AON=y
+
+# ============================================================
+# GPU - Imagination PowerVR BXM-4-64 Rogue (upstream driver).
+# ============================================================
+CONFIG_DRM_POWERVR=m

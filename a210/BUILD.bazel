@@ -128,9 +128,22 @@ ALIBABA_IN_TREE_MODULES_PATH = [
     "drivers/mmc/host/sdhci-of-dwcmshc.ko",
     "drivers/mmc/host/cqhci.ko",
     "drivers/watchdog/dw_wdt.ko",
-    "drivers/usb/dwc3/dwc3-zhihe.ko",
+    "drivers/usb/dwc3/dwc3-of-simple.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-usb2.ko",
     "drivers/phy/zhihe/phy-zhihe-snps-c10phy.ko",
+    "drivers/gpu/drm/verisilicon/verisilicon-dc.ko",
+    "drivers/gpu/drm/bridge/th1520-dw-hdmi.ko",
+    "drivers/gpu/drm/drm_exec.ko",
+    "drivers/gpu/drm/drm_gpuvm.ko",
+    "drivers/gpu/drm/scheduler/gpu-sched.ko",
+    "drivers/gpu/drm/imagination/powervr.ko",
+    "drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko",
+    "drivers/gpu/drm/drm_dma_helper.ko",
+    "drivers/gpu/drm/display/drm_display_helper.ko",
+    "drivers/usb/dwc2/dwc2.ko",
+    "drivers/i2c/busses/i2c-designware-core.ko",
+    "drivers/i2c/busses/i2c-designware-platform.ko",
+    "drivers/gpio/gpio-pca953x.ko",
 ]
 
 # ============================================================
@@ -162,9 +175,22 @@ ALIBABA_VENDOR_BOOT_MODULES = [
 # Vendor DLKM modules
 # ============================================================
 ALIBABA_VENDOR_DLKM_MODULES = [
-    "dwc3-zhihe.ko",
+    "dwc2.ko",
+    "dwc3-of-simple.ko",
     "phy-zhihe-snps-usb2.ko",
     "phy-zhihe-snps-c10phy.ko",
+    "verisilicon-dc.ko",
+    "th1520-dw-hdmi.ko",
+    "drm_exec.ko",
+    "drm_gpuvm.ko",
+    "gpu-sched.ko",
+    "powervr.ko",
+    "dw-hdmi.ko",
+    "drm_dma_helper.ko",
+    "drm_display_helper.ko",
+    "i2c-designware-core.ko",
+    "i2c-designware-platform.ko",
+    "gpio-pca953x.ko",
 ]
 
 # ============================================================
@@ -199,6 +225,7 @@ kernel_build(
                   get_kunit_modules_list("riscv64") +
                   ALIBABA_IN_TREE_MODULES_PATH +
                   ALIBABA_SYSTEM_DLKM_EXTRA_MODULES,
+    pahole = "//common:pahole",
     pre_defconfig_fragments = [":zhihe_a210.fragment"],
     visibility = ["//visibility:public"],
 )
