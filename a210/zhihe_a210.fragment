@@ -28,13 +28,6 @@ CONFIG_ARCH_ZHIHE=y
 # ============================================================
 # Vendor Options
 # ============================================================
-# CONFIG_XUANTIE_SSTC: without this any hrtimer-based sleep
-# (usleep_range()/msleep(), e.g. mmc_delay() during eMMC power-up)
-# hangs forever with no error; zhihesdk's vendor kernel works around
-# this the same way: arm the next timer event by writing directly
-# to a per-hart CLINT "shadow register" via MMIO instead of
-# going through SBI. See drivers/clocksource/timer-riscv.c.
-CONFIG_XUANTIE_SSTC=y
 # CONFIG_RISCV_PROBE_VECTOR_UNALIGNED_ACCESS is the gki_defconfig
 # default. Bisecting with maxcpus=N on real A210 hardware showed
 # this reliably crashes (illegal instruction / OpenSBI trap) once 4
